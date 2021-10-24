@@ -74,7 +74,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "baltikbankcoin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff00019ca79812029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101404ee704470b4f0e81d186a0e2414123d4448ad5d45416adbf7fc8f102b006dc";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff00019ca79812029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101b7c2f8a7174da5d5c1cf78bdc138513c7e83e10a9d2e492e0e23a09b4f675741";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
