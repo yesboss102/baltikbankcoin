@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 2.8.6)
 
 set(VERSION "0.1")
-# $Format:Packaged from commit %H%nset(COMMIT %h)%nset(REFS "%d")$
+# Packaged from commit eefa6a7004c0e09c392b3e74e7e0c458d7571dcf
+set(COMMIT eefa6a7004)
+set(REFS " (HEAD -> master)")
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set(CMAKE_CONFIGURATION_TYPES Debug RelWithDebInfo Release CACHE TYPE INTERNAL)
