@@ -1,8 +1,13 @@
 cmake_minimum_required(VERSION 2.8.6)
 
 set(VERSION "0.1")
+<<<<<<< HEAD
 # Packaged from commit 0a686c873cb94fff857b64af8af704ca38d71534
 set(COMMIT 0a686c873c)
+=======
+# Packaged from commit eefa6a7004c0e09c392b3e74e7e0c458d7571dcf
+set(COMMIT eefa6a7004)
+>>>>>>> f7b7e094375dcf632b98e3874505f3fef064ad76
 set(REFS " (HEAD -> master)")
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)

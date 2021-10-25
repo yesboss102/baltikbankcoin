@@ -27,8 +27,15 @@ namespace parameters {
 const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
+<<<<<<< HEAD
 const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x6bce;
 const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 10;
+=======
+//TODO Currency-specific address prefix
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x8;
+//TODO Choose maturity period for your currency
+const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 60;
+>>>>>>> f7b7e094375dcf632b98e3874505f3fef064ad76
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
@@ -58,12 +65,20 @@ const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2  = 20000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 10000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
+<<<<<<< HEAD
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 4;
 const uint64_t MINIMUM_FEE                                   = UINT64_C(100);    // pow(10, 6)
 const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(100);    // pow(10, 6)
 // Use 0 for default max transaction size limit
 const uint64_t MAX_TRANSACTION_SIZE_LIMIT                          = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE * 110 / 100 - CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE;
 const uint64_t DEFAULT_FEE                          = MINIMUM_FEE;
+=======
+//TODO Define number of digits
+const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
+//TODO Define minimum fee for transactions
+const uint64_t MINIMUM_FEE                                   = 100000;
+const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
+>>>>>>> f7b7e094375dcf632b98e3874505f3fef064ad76
 
 const uint64_t DIFFICULTY_TARGET                             = 120; // seconds
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
@@ -110,7 +125,13 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 } // parameters
 
+<<<<<<< HEAD
 const char     CRYPTONOTE_NAME[]                             = "BaltikBankCoin";
+=======
+//TODO Put here the name of your currency
+const char     CRYPTONOTE_NAME[]                             = "BaltikBankCoin";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
+>>>>>>> f7b7e094375dcf632b98e3874505f3fef064ad76
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
@@ -142,6 +163,7 @@ const uint32_t P2P_DEFAULT_PING_CONNECTION_TIMEOUT           = 2000;          //
 const uint64_t P2P_DEFAULT_INVOKE_TIMEOUT                    = 60 * 2 * 1000; // 2 minutes
 const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          // 5 seconds
 
+<<<<<<< HEAD
 const uint32_t  P2P_FAILED_ADDR_FORGET_SECONDS                  = (60*60);     //1 hour
 const uint32_t  P2P_IP_BLOCKTIME                                 = (60*60*24);  //24 hour
 const uint32_t  P2P_IP_FAILS_BEFORE_BLOCK                       = 10;
@@ -151,6 +173,13 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "";
 
 const char* const SEED_NODES[] = { "46.253.143.123:8080", "46.253.143.124:8080" };
 
+=======
+//TODO Add here your network seed nodes
+const std::initializer_list<const char*> SEED_NODES = {
+ "46.253.143.123:17236",
+ "46.253.143.124:17236"
+};
+>>>>>>> f7b7e094375dcf632b98e3874505f3fef064ad76
 
 struct CheckpointData {
   uint32_t index;
